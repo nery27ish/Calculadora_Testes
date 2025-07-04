@@ -55,7 +55,7 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste números negativos com exponenciação de zero, testar para todas as versões
         for func in [calculadora, calculadora_v2, calculadora_v3, calculadora_v4]:
-            self.assertEqual(func(0, 3, '^'), 0)
+            self.assertEqual(func(-2, 0, '^'), 0)
 
 
 if __name__ == '__main__':
