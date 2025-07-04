@@ -73,12 +73,12 @@ def calculadora_v4(num1: float, num2: float, operador: str) -> float:
         return float("nan")
 
     operacoes = {
-        "+": num1 + num2,
-        "-": num1 - num2,
-        "/": num1 / num2,
-        "*": num1 * num2,
-        "%": num1 % num2,
-        "^": num1 ** num2,
+        "+": lambda: num1 + num2,
+        "-": lambda: num1 - num2,
+        "/": lambda: num1 / num2,
+        "*": lambda: num1 * num2,
+        "%": lambda: num1 % num2,
+        "^": lambda: num1 ** num2,
     }
 
     funcao = operacoes.get(operador)
